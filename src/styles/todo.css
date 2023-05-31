@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #8758ff;
+    height: 100vh;
+    width: 100%;
+}
+
+.todoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todoBox {
+    background: #1A1A40;
+    padding: 2rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+}
+
+.todoform {
+    width: 100%;
+}
+
+.todo-input {
+    width: 400px;
+    margin: 2rem 0;
+    background: none;
+    color: white;
+    outline: none;
+    border: 1px solid #8758ff;
+    padding: 0.5rem 1rem;
+}
+
+.todo-input::placeholder {
+    color: #ffffff4d;
+}
+
+.todo-btn {
+    background: #8758ff;
+    color: white;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    padding: 0.55rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.todo {
+    background: #8758ff;
+    color: white;
+    padding: 0.4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.todo-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    margin-right: 0.75rem;
+}
+
+@media (max-width: 500px) {
+    .todoBox {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+    .todo-input {
+        width: 210px;
+    }
+}
